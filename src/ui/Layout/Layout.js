@@ -4,8 +4,8 @@ import { ChakraProvider } from "@chakra-ui/react";
 import * as Styles from "./Layout.module.css";
 
 import Navigation from "../../components/Navigation/Navigation";
+import Middle from "../../components/Middle/Middle";
 
-// import { Button } from "@chakra-ui/react"
 import Left from "../../components/Left/Left";
 
 const Layout = () => {
@@ -15,9 +15,9 @@ const Layout = () => {
                 <Navigation />
                 <div className={Styles.Body}>
                     <Left />
-                    <div className={Styles.Middle}>
-                        center
-                    </div>
+                    <Middle />
+
+
                     <div className={Styles.Right}>
                         Right
                     </div>

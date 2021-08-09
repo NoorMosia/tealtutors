@@ -1,0 +1,19 @@
+.Middle {
+    border: 1px solid rgba(0, 128, 128, 0.13);
+    width: 50%;
+    margin-left: 20%;
+}
+
+.Post {
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.Container {
+    display: flex;
+    padding: 10px;
+}
+
+.TextSide {
+    padding: 4px 10px;
+}
