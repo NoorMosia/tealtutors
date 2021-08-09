@@ -12,11 +12,12 @@ const Post = () => {
                 </div>
                 <div className={Styles.TextSide}>
                     <div className={Styles.Name}>
-                        Noor Mosia
+                        <span className={Styles.DisplayName}>Noor Mosia</span>
+                        <span className={Styles.username}> @mosianoor</span>
                     </div>
                     <LinkOverlay href="#">
                     </LinkOverlay>
-                    <Text color="gray.600" >
+                    <Text color="gray.800" >
                         Lorem ipsum is placeholder text commonly used in the graphic, print, and
                         publishing industries for previewing layouts and visual mockups.
                         Lorem ipsum is placeholder text commonly used in the graphic, print, and
