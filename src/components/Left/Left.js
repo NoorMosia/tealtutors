@@ -6,55 +6,30 @@ import {
     AiOutlineCalendar,
     AiOutlineSetting
 } from "react-icons/ai";
-import { Icon } from "@chakra-ui/react";
-
 import * as Styles from "./Left.module.css";
+
+import NavLink from "../NavLink/NavLink";
+import { Link } from "react-router-dom"
 
 const Left = () => {
     return (
         <div className={Styles.Left}>
-            <div className={Styles.Link}>
-                <div className={Styles.Icon}>
-                    <Icon as={AiOutlineHome} />
-                </div>
-                <div className={Styles.Title}>
-                    Home
-                </div>
-            </div>
-            <div className={Styles.Link}>
-                <div className={Styles.Icon}>
-                    <Icon as={AiOutlineSearch} />
-                </div>
-                <div className={Styles.Title}>
-                    Search
-                </div>
-            </div>
-            <div className={Styles.Link}>
-                <div className={Styles.Icon}>
-                    <Icon as={AiOutlineBell} />
-                </div>
-                <div className={Styles.Title}>
-                    Notifications
-                </div>
-            </div>
-            <div className={Styles.Link}>
-                <div className={Styles.Icon}>
-                    <Icon as={AiOutlineCalendar} />
-                </div>
-                <div className={Styles.Title}>
-                    Schedule
-                </div>
-            </div>
-            <div className={Styles.Link}>
-                <div className={Styles.Icon}>
-                    <Icon as={AiOutlineSetting} />
-                </div>
-                <div className={Styles.Title}>
-                    Settings
-                </div>
-            </div>
-        </div >
-
+            <Link to="/home">
+                <NavLink name="Home" icon={AiOutlineHome} />
+            </Link>
+            <Link to="/search">
+                <NavLink name="Search" icon={AiOutlineSearch} />
+            </Link>
+            <Link to="/notifications">
+                <NavLink name="Notifications" icon={AiOutlineBell} />
+            </Link>
+            <Link to="/schedule">
+                <NavLink name="Schedule" icon={AiOutlineCalendar} />
+            </Link>
+            <Link to="/settings">
+                <NavLink name="Settings" icon={AiOutlineSetting} />
+            </Link>
+        </div>
     );
 }
 
