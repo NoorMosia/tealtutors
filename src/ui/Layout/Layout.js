@@ -16,10 +16,7 @@ const Layout = () => {
                 <div className={Styles.Body}>
                     <Left />
                     <Middle />
-
-
                     <div className={Styles.Right}>
-                        Right
                     </div>
                 </div>
             </div>

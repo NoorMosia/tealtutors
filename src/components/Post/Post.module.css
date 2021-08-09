@@ -8,6 +8,9 @@
     padding: 10px 20px;
     transition: .2s linear;
     border-bottom: 1px solid rgb(216, 216, 216);
+    display: flex;
+    padding: 10px; 
+    cursor: pointer;
 }
 
 .Post:hover {
@@ -18,10 +21,9 @@
     font-weight: 500;
     font-size: 18px;
 }
-
-.Container {
-    display: flex;
-    padding: 10px; 
+.username {
+    color: rgb(93, 93, 93);
+    font-weight: 300;
 }
 
 .TextSide {
@@ -31,10 +33,12 @@
 .PostExtras {
     display: flex;
     justify-content: space-between;
-    /* margin-top: 10px; */
 }
 
-.username {
-    color: rgb(93, 93, 93);
-    font-weight: 300;
+.icon {
+    text-align: center;
+    margin-top: 10px;
+}
+.icon:hover{
+    color: #285E61;
 }

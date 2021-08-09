@@ -6,7 +6,7 @@ import {
     AiOutlineCalendar,
     AiOutlineSetting
 } from "react-icons/ai";
-import { Icon } from "@chakra-ui/react"
+import { Icon } from "@chakra-ui/react";
 
 import * as Styles from "./Left.module.css";
 
