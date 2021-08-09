@@ -25,9 +25,15 @@ const Post = () => {
                     </Text>
 
                     <div className={Styles.PostExtras}>
-                        <div className={Styles.icon}>Attachments</div>
-                        <div className={Styles.icon}>Comments</div>
-                        <div className={Styles.icon}>Live Class</div>
+                        <div className={Styles.icon}>
+                            Attachments
+                        </div>
+                        <div className={Styles.icon}>
+                            Comments
+                        </div>
+                        <div className={Styles.icon}>
+                            Like
+                        </div>
                     </div>
                 </div>
             </div>

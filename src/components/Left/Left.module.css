@@ -5,6 +5,28 @@
     position: fixed;
 }
 
-.Button {
-    text-align: center;
+.Link {
+    font-size: 22px;
+    width: 250px;
+    font-weight: 600;
+    border-radius: 2px;
+    cursor: pointer;
+    color: rgb(20, 20, 20);
+    margin: 5px;
+    padding: 5px 40px;
+    transition: .2s all;
+    display: flex;
+}
+
+.Link:hover {
+    background: #E6FFFA;
+    color: #285E61;
+}
+
+.Icon {
+    margin: 4px 10px;
+}
+
+.Title {
+    margin: 7px;
 }

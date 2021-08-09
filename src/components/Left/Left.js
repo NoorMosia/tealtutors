@@ -1,29 +1,58 @@
 import React from "react";
+import {
+    AiOutlineHome,
+    AiOutlineSearch,
+    AiOutlineBell,
+    AiOutlineCalendar,
+    AiOutlineSetting
+} from "react-icons/ai";
+import { Icon } from "@chakra-ui/react"
 
 import * as Styles from "./Left.module.css";
-import { Button, VStack } from "@chakra-ui/react";
-
 
 const Left = () => {
     return (
         <div className={Styles.Left}>
-            <VStack spacing={2} align="stretch">
-                <Button className={Button} align="left" size="lg" colorScheme="teal" variant="ghost">
+            <div className={Styles.Link}>
+                <div className={Styles.Icon}>
+                    <Icon as={AiOutlineHome} />
+                </div>
+                <div className={Styles.Title}>
                     Home
-                </Button>
-                <Button size="lg" colorScheme="teal" variant="ghost">
+                </div>
+            </div>
+            <div className={Styles.Link}>
+                <div className={Styles.Icon}>
+                    <Icon as={AiOutlineSearch} />
+                </div>
+                <div className={Styles.Title}>
                     Search
-                </Button>
-                <Button size="lg" colorScheme="teal" variant="ghost">
+                </div>
+            </div>
+            <div className={Styles.Link}>
+                <div className={Styles.Icon}>
+                    <Icon as={AiOutlineBell} />
+                </div>
+                <div className={Styles.Title}>
                     Notifications
-                </Button>
-                <Button size="lg" colorScheme="teal" variant="ghost">
-                    Profile
-                </Button>
-                <Button size="lg" colorScheme="teal" variant="ghost">
+                </div>
+            </div>
+            <div className={Styles.Link}>
+                <div className={Styles.Icon}>
+                    <Icon as={AiOutlineCalendar} />
+                </div>
+                <div className={Styles.Title}>
+                    Schedule
+                </div>
+            </div>
+            <div className={Styles.Link}>
+                <div className={Styles.Icon}>
+                    <Icon as={AiOutlineSetting} />
+                </div>
+                <div className={Styles.Title}>
                     Settings
-                </Button>
-            </VStack>
+                </div>
+            </div>
         </div >
 
     );
