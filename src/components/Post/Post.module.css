@@ -5,8 +5,18 @@
 }
 
 .Post {
-    padding: 10px;
-    margin-bottom: 20px;
+    padding: 10px 20px;
+    transition: .2s linear;
+    border-bottom: 1px solid rgb(216, 216, 216);
+}
+
+.Post:hover {
+    background: #e6fffa7c;
+}
+
+.Name {
+    font-weight: 500;
+    font-size: 18px;
 }
 
 .Container {
@@ -16,4 +26,10 @@
 
 .TextSide {
     padding: 4px 10px;
+}
+
+.PostExtras {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
 }

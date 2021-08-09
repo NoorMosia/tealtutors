@@ -1,13 +1,12 @@
 import React from "react";
 import * as Styles from "./Post.module.css";
 
-import { Container, Avatar, Text } from "@chakra-ui/react";
-
+import { Avatar, Text, LinkBox, LinkOverlay } from "@chakra-ui/react";
 
 const Post = () => {
     return (
-        <div className={Styles.Post}>
-            <Container className={Styles.Container}>
+        <LinkBox className={Styles.Post}>
+            <div className={Styles.Container}>
                 <div className={Styles.AvatarSide}>
                     <Avatar name="Dan Abrahmov" src="https://bit.ly/dan-abramov" />
                 </div>
@@ -15,15 +14,23 @@ const Post = () => {
                     <div className={Styles.Name}>
                         Noor Mosia
                     </div>
-                    <Text color="gray.500" >
+                    <LinkOverlay href="#">
+                    </LinkOverlay>
+                    <Text color="gray.600" >
                         Lorem ipsum is placeholder text commonly used in the graphic, print, and
                         publishing industries for previewing layouts and visual mockups.
                         Lorem ipsum is placeholder text commonly used in the graphic, print, and
                         publishing industries for previewing layouts and visual mockups.
                     </Text>
+
+                    <div className={Styles.PostExtras}>
+                        <div className={Styles.icon}>Attachments</div>
+                        <div className={Styles.icon}>Comments</div>
+                        <div className={Styles.icon}>Live Class</div>
+                    </div>
                 </div>
-            </Container>
-        </div>
+            </div>
+        </LinkBox>
     );
 }
 
