@@ -8,7 +8,7 @@ import {
 
 import Posts from "../../containers/Posts/Posts";
 import Search from "../../containers/Search/Search";
-
+import FullPost from "../FullPost/FullPost";
 
 const Middle = () => {
     return (
@@ -16,6 +16,9 @@ const Middle = () => {
             <div className={Styles.Middle}>
                 <Route path="/home">
                     <Posts />
+                </Route>
+                <Route path="/Post">
+                    <FullPost />
                 </Route>
                 <Route path="/search">
                     <Search />

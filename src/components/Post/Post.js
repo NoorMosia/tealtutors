@@ -9,16 +9,16 @@ import { Icon } from "@chakra-ui/react"
 
 import { Avatar, Text } from "@chakra-ui/react";
 
-const Post = () => {
+const Post = props => {
     return (
         <div className={Styles.Post}>
             <div className={Styles.AvatarSide}>
-                <Avatar name="Dan Abrahmov" src="https://bit.ly/prosper-baba" />
+                <Avatar name={props.data.name} src="https://bit.ly/prosper-baba" />
             </div>
             <div className={Styles.TextSide}>
                 <div className={Styles.Name}>
-                    <span className={Styles.DisplayName}>Noor Mosia</span>
-                    <span className={Styles.username}> @mosianoor</span>
+                    <span className={Styles.DisplayName}>{props.data.name}</span>
+                    <span className={Styles.username}> @{props.data.username}</span>
                 </div>
                 <Text color="gray.800" >
                     Lorem ipsum is placeholder text commonly used in the graphic, print, and
