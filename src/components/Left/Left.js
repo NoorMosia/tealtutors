@@ -9,30 +9,32 @@ import {
 } from "react-icons/ai";
 import * as Styles from "./Left.module.css";
 
-import NavLink from "../NavLink/NavLink";
-import { Link } from "react-router-dom"
+import Link from "../NavLink/NavLink";
+import { NavLink } from "react-router-dom"
 
 const Left = () => {
     return (
         <div className={Styles.Left}>
-            <Link to="/home">
-                <NavLink name="Home" icon={AiOutlineHome} />
-            </Link>
-            <Link to="/search">
-                <NavLink name="Search" icon={AiOutlineSearch} />
-            </Link>
-            <Link to="/notifications">
-                <NavLink name="Notifications" icon={AiOutlineBell} />
-            </Link>
-            <Link to="/schedule">
-                <NavLink name="Schedule" icon={AiOutlineCalendar} />
-            </Link>
-            <Link to="/profile">
-                <NavLink name="Profile" icon={AiOutlineUser} />
-            </Link>
-            <Link to="/settings">
-                <NavLink name="Settings" icon={AiOutlineSetting} />
-            </Link>
+            <NavLink to="/home" activeClassName={Styles.Active}>
+                <Link name="Home" icon={AiOutlineHome} />
+            </NavLink>
+            <NavLink to="/search" activeClassName={Styles.Active}>
+                <Link name="Search" icon={AiOutlineSearch} />
+            </NavLink>
+            <NavLink to="/notifications" activeClassName={Styles.Active}>
+                <Link name="Notifications" icon={AiOutlineBell} />
+            </NavLink>
+            <NavLink to="/schedule" activeClassName={Styles.Active}>
+                <Link name="Schedule" icon={AiOutlineCalendar} />
+            </NavLink>
+
+            <NavLink to="/profile" activeClassName={Styles.Active}>
+                <Link name="Profile" icon={AiOutlineUser} />
+            </NavLink>
+
+            <NavLink to="/settings" activeClassName={Styles.Active}>
+                <Link name="Settings" icon={AiOutlineSetting} />
+            </NavLink>
         </div>
     );
 }
