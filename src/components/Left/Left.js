@@ -4,7 +4,8 @@ import {
     AiOutlineSearch,
     AiOutlineBell,
     AiOutlineCalendar,
-    AiOutlineSetting
+    AiOutlineSetting,
+    AiOutlineUser
 } from "react-icons/ai";
 import * as Styles from "./Left.module.css";
 
@@ -25,6 +26,9 @@ const Left = () => {
             </Link>
             <Link to="/schedule">
                 <NavLink name="Schedule" icon={AiOutlineCalendar} />
+            </Link>
+            <Link to="/profile">
+                <NavLink name="Profile" icon={AiOutlineUser} />
             </Link>
             <Link to="/settings">
                 <NavLink name="Settings" icon={AiOutlineSetting} />

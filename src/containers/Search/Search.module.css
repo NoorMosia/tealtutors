@@ -1,0 +1,12 @@
+.Search {
+    padding: 10px;
+}
+
+.Search input {
+    margin-right: 10px;
+}
+
+.SearchBar {
+    display: flex;
+    margin-bottom: 40px;
+}
