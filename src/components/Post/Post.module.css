@@ -14,7 +14,12 @@
 }
 
 .Post:hover {
-    background: #f6fffd7c;
+    /* background: #d8fff7; */
+    box-shadow: 2px 2px 4px 2px rgb(240, 240, 240);
+}
+
+.Post:active {
+    background: #002f257c;
 }
 
 .Name {
