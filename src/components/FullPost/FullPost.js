@@ -6,6 +6,9 @@ import { Textarea, Button } from "@chakra-ui/react";
 import CommentCard from "../CommentCard/CommentCard";
 
 const data = {
+    message: "Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing",
+}
+const user = {
     name: "noor mosia",
     username: "mosianoor",
     img: "https://bit.ly/ryan-florence"
@@ -13,7 +16,7 @@ const data = {
 
 const FullPost = props => {
     return <div className={Styles.FullPost}>
-        <PostCard {...props} data={data} />
+        <PostCard {...props} user={user} data={data} />
 
         <div className={Styles.CommentInput}>
             <Textarea placeholder="Type your comment" />
@@ -22,9 +25,9 @@ const FullPost = props => {
             </Button>
         </div>
         <div className={Styles.Comments}>
-            <CommentCard data={data} />
-            <CommentCard data={data} />
-            <CommentCard data={data} />
+            <CommentCard data={user} />
+            <CommentCard data={user} />
+            <CommentCard data={user} />
         </div>
 
     </div>

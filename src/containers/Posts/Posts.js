@@ -1,42 +1,26 @@
 import React from "react";
 import Post from "../../components/PostCard/PostCard";
 
-import { Link } from "react-router-dom"
-
-const data = [
-    {
-        name: "noor mosia",
-        username: "mosianoor",
-        img: "https://bit.ly/code-beast"
-    },
-    {
-        name: "Kyle Walker",
-        username: "KWalker",
-        img: "https://bit.ly/dan-abramov"
-    },
-    {
-        name: "Lionel Messi",
-        username: "THEGOAT",
-        img: "https://bit.ly/sage-adebayo"
-    },
-    {
-        name: "King James",
-        username: "KINGJ",
-        img: "https://bit.ly/ryan-florence"
-    }
-]
+import { Link } from "react-router-dom";
+import { posts, users } from "../../ui/Data";
 
 const Posts = () => {
+    const data = posts.map(post => {
+        let userDetails = users.filter(user => post.postedBy === user.username);
+
+        return { ...post, ...userDetails }
+    });
+
     const PostData = data.map(data => {
-        return <Link to="/Post">
-            <Post data={data} />
+        const user = { ...data[0] };
+        return <Link to={`/post/${data.id}`}>
+            <Post data={data} user={user} />
         </Link>
-            ;
     })
-    return (<>
+
+    return <>
         {PostData}
-    </>
-    );
+    </>;
 }
 
 export default Posts;

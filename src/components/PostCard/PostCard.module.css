@@ -12,10 +12,6 @@
     box-shadow: 2px 2px 4px 2px rgb(240, 240, 240);
 }
 
-.PostCard:active {
-    background: #002f257c;
-}
-
 .Name {
     font-weight: 500;
     font-size: 18px;
@@ -27,6 +23,7 @@
 
 .TextSide {
     padding: 1px 10px;
+    flex: 1;
 }
 
 .PostCardExtras {

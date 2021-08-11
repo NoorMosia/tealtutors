@@ -12,10 +12,6 @@
     box-shadow: 2px 2px 4px 2px rgb(240, 240, 240);
 }
 
-.CommentCard:active {
-    background: #002f257c;
-}
-
 .Name {
     font-weight: 500;
     font-size: 18px;

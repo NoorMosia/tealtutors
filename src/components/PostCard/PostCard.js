@@ -15,19 +15,16 @@ const PostCard = props => {
         <div className={Styles.PostCard}>
             <div className={Styles.AvatarSide}>
                 <Link to="/profile">
-                    <Avatar name={props.data.name} src={props.data.img} />
+                    <Avatar name={props.user.name} src={props.user.img} />
                 </Link>
             </div>
             <div className={Styles.TextSide}>
                 <div className={Styles.Name}>
-                    <span className={Styles.DisplayName}>{props.data.name}</span>
-                    <span className={Styles.username}> @{props.data.username}</span>
+                    <span className={Styles.DisplayName}>{props.user.name}</span>
+                    <span className={Styles.username}> @{props.user.username}</span>
                 </div>
                 <Text color="gray.800" >
-                    Lorem ipsum is placeholder text commonly used in the graphic, print, and
-                    publishing industries for previewing layouts and visual mockups.
-                    Lorem ipsum is placeholder text commonly used in the graphic, print, and
-                    publishing industries for previewing layouts and visual mockups.
+                    {props.data.message}
                 </Text>
                 <div className={Styles.PostCardExtras}>
                     <div className={Styles.icon}>
