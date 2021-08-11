@@ -1,0 +1,27 @@
+.Buttons {
+    margin: 10px 0;
+}
+
+.Contents {
+    padding: 10px;
+}
+
+.Tutor {
+    background: #E6FFFA;
+    height: 500px;
+    border-radius: 5px;
+}
+
+.Learners {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+}
+
+.Learner {
+    border-radius: 5px;
+    background: #B2F5EA;
+    margin: 10px;
+    width: 100px;
+    height: 100px;
+}

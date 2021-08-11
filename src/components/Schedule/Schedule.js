@@ -1,18 +1,85 @@
 import React, { Component } from 'react'
 //import moment from 'moment'
 //import 'moment/locale/zh-cn';
-import Scheduler, { SchedulerData, ViewTypes, DemoData } from 'react-big-scheduler'
+import Scheduler, { SchedulerData, ViewTypes, } from 'react-big-scheduler'
 import withDragDropContext from './withDnDContext';
 import 'react-big-scheduler/lib/css/style.css';
 import * as Styles from "./Schedule.module.css";
+import Heading from '../Heading/Heading';
+
+const DemoData = {
+    events: [{
+        bgColor: "#38B2AC",
+        end: "2021-08-11 12:30:00",
+        id: 1,
+        resourceId: "r1",
+        showPopover: false,
+        start: "2021-08-11 09:30:00",
+        title: "Chemical change",
+    },
+    {
+        bgColor: "#38B222",
+        end: "2021-08-11 12:30:00",
+        id: 1,
+        resourceId: "r0",
+        showPopover: false,
+        start: "2021-08-11 09:30:00",
+        title: "Statistics",
+    },
+    {
+        bgColor: "#38B222",
+        end: "2021-08-11 14:30:00",
+        id: 1,
+        resourceId: "r2",
+        showPopover: false,
+        start: "2021-08-11 13:30:00",
+        title: "Drawing",
+    }
+    ],
+    eventsForCustomEventStyle: [{
+        bgColor: "#38B2AC",
+        end: "2021-08-18 23:30:00",
+        id: 1,
+        resourceId: "r1",
+        showPopover: false,
+        start: "2021-08-11 09:30:00",
+        title: "Chemical change",
+    }],
+    eventsForTaskView: [{
+        bgColor: "#38B2AC",
+        end: "2021-08-11 23:30:00",
+        id: 1,
+        resourceId: "r1",
+        showPopover: false,
+        start: "2021-08-11 09:30:00",
+        title: "Chemical change",
+    }],
+    resources: [
+        {
+            groupOnly: false,
+            id: "r0",
+            name: "R. Firmino",
+        },
+        {
+            groupOnly: false,
+            id: "r1",
+            name: "I. Meslier",
+        },
+        {
+            groupOnly: false,
+            id: "r2",
+            name: "T. Mings",
+        }
+    ]
+
+}
 
 class Basic extends Component {
     constructor(props) {
         super(props);
-
         //let schedulerData = new SchedulerData(new moment("2017-12-18").format(DATE_FORMAT), ViewTypes.Week);
-        let schedulerData = new SchedulerData('2017-12-18', ViewTypes.Week, false, false, {
-            // minuteStep: 15
+        let schedulerData = new SchedulerData('2021-08-11 09:30:00', ViewTypes.Day, false, false, {
+            minuteStep: 15
         });
         // schedulerData.localeMoment.locale('en');
         schedulerData.setResources(DemoData.resources);
@@ -23,11 +90,11 @@ class Basic extends Component {
     }
 
     render() {
-
         console.log(DemoData);
         const { viewModel } = this.state;
         return (
             <div className={Styles.Schedule}>
+                <Heading>Schedule</Heading>
                 <div>
                     <Scheduler schedulerData={viewModel}
                         prevClick={this.prevClick}

@@ -1,11 +1,5 @@
 import React from "react";
 import * as Styles from "./Profile.module.css";
-// import {
-//     AiOutlinePaperClip,
-//     AiOutlineMessage,
-//     AiOutlineHeart
-// } from "react-icons/ai";
-// import { Icon } from "@chakra-ui/react"
 
 import { Avatar, Button, Tabs, Tab, TabList, TabPanel, TabPanels, Stack, AvatarBadge } from "@chakra-ui/react";
 

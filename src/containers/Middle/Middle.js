@@ -13,6 +13,7 @@ import FullPost from "../../components/FullPost/FullPost";
 import Notifications from "../../components/Notifications/Notifications";
 import Schedule from "../../components/Schedule/Schedule";
 import Profile from "../../components/Profile/Profile";
+import LiveClass from "../../components/LiveClass/LiveClass";
 
 const Middle = () => {
     const location = useLocation()
@@ -36,6 +37,9 @@ const Middle = () => {
                 </Route>
                 <Route path="/profile">
                     <Profile />
+                </Route>
+                <Route path="/live">
+                    <LiveClass />
                 </Route>
                 <Route path="/settings">
                     settings
