@@ -17,3 +17,16 @@
     flex-direction: column;
     justify-content: space-around;
 }
+
+.Names{
+    padding-bottom: 20px;
+}
+.Names h2 {
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.Names p {
+    font-size: 18;
+    font-weight: 300;
+}

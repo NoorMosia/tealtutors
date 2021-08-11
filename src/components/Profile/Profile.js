@@ -7,7 +7,7 @@ import * as Styles from "./Profile.module.css";
 // } from "react-icons/ai";
 // import { Icon } from "@chakra-ui/react"
 
-import { Avatar, Button, Tabs, Tab, TabList, TabPanel, TabPanels } from "@chakra-ui/react";
+import { Avatar, Button, Tabs, Tab, TabList, TabPanel, TabPanels, Stack, AvatarBadge } from "@chakra-ui/react";
 
 import Posts from "../../containers/Posts/Posts";
 import Schedule from "../Schedule/Schedule";
@@ -18,7 +18,11 @@ const Profile = props => {
             <div className={Styles.Head}>
                 <div className={Styles.HeadTop}>
                     <div className={Styles.Image}>
-                        <Avatar size="2xl" name="Segun Adebayo" src="https://bit.ly/sage-adebayo" />
+                        <Stack direction="row" spacing={4}>
+                            <Avatar size="xl" name="Christian Nwamba" src="https://bit.ly/prosper-baba" >
+                                <AvatarBadge borderColor="papayawhip" bg="red" boxSize="1.25em" />
+                            </Avatar>
+                        </Stack>
                     </div>
                     <div className={Styles.Buttons}>
                         <Button colorScheme="teal" variant="outline">Follow</Button>
@@ -27,6 +31,11 @@ const Profile = props => {
                 </div>
 
                 <div className={Styles.HeadBottom}>
+
+                    <div className={Styles.Names}>
+                        <h2>Mosia Noor</h2>
+                        <p>@mosianoor</p>
+                    </div>
                     <div className={Styles.DescriptionText}>
                         Lorem ipsum is placeholder text commonly used in the graphic, print, and
                         publishing industries for previewing layouts and visual mockups.
