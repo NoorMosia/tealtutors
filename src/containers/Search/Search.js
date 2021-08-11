@@ -5,8 +5,7 @@ import { Input, IconButton, Tabs, TabList, TabPanel, Tab, TabPanels } from "@cha
 import {
     AiOutlineSearch,
 } from "react-icons/ai";
-import Posts from "../Posts/Posts";
-
+// import Posts from "../Posts/Posts";
 
 
 const Search = () => {
@@ -23,7 +22,7 @@ const Search = () => {
             </TabList>
             <TabPanels>
                 <TabPanel>
-                    <Posts />
+                    {/* <Posts /> */}
                 </TabPanel>
                 <TabPanel>
                     <p>A list of Tutors with same name!</p>

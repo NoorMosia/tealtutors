@@ -1,0 +1,26 @@
+
+.NotificationCard {
+    display: flex;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+}
+
+.Icon {
+    padding: 0 10px;
+}
+
+.Summary {
+    display: flex;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.Name {
+    padding-right: 10px;
+    font-weight: bolder;
+}
+
+.PostText {
+    color: rgb(134, 134, 134);
+}

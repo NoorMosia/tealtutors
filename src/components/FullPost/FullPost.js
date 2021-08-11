@@ -1,9 +1,9 @@
 import React from "react";
 import * as Styles from "./FullPost.module.css";
 import PostCard from "../PostCard/PostCard";
-import Posts from "../../containers/Posts/Posts";
 
-import { Textarea, Button } from "@chakra-ui/react"
+import { Textarea, Button } from "@chakra-ui/react";
+import CommentCard from "../CommentCard/CommentCard";
 
 const data = {
     name: "noor mosia",
@@ -22,7 +22,9 @@ const FullPost = props => {
             </Button>
         </div>
         <div className={Styles.Comments}>
-            <Posts />
+            <CommentCard data={data} />
+            <CommentCard data={data} />
+            <CommentCard data={data} />
         </div>
 
     </div>

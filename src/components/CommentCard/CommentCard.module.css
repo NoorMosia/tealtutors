@@ -1,0 +1,45 @@
+.CommentCard {
+    padding: 10px 20px;
+    transition: .2s linear;
+    border-bottom: 1px solid rgb(216, 216, 216);
+    display: flex;
+    padding: 10px; 
+    cursor: pointer;
+}
+
+.CommentCard:hover {
+    /* background: #d8fff7; */
+    box-shadow: 2px 2px 4px 2px rgb(240, 240, 240);
+}
+
+.CommentCard:active {
+    background: #002f257c;
+}
+
+.Name {
+    font-weight: 500;
+    font-size: 18px;
+}
+.username {
+    color: rgb(93, 93, 93);
+    font-weight: 300;
+}
+
+.TextSide {
+    padding: 1px 10px;
+}
+
+.CommentCardExtras {
+    display: flex;
+    justify-content: space-between;
+}
+
+.icon {
+    text-align: center;
+    margin-top: 10px;
+    transition: .2s linear;
+}
+.icon:hover{
+    color: #2b6164;
+    text-shadow: 1px 1px 20px #2b6164;
+}
