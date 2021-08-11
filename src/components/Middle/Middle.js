@@ -15,6 +15,7 @@ import Posts from "../../containers/Posts/Posts";
 import Search from "../../containers/Search/Search";
 import FullPost from "../FullPost/FullPost";
 import Notifications from "../Notifications/Notifications";
+import Schedule from "../Schedule/Schedule";
 
 const Middle = () => {
     const location = useLocation()
@@ -40,7 +41,7 @@ const Middle = () => {
                             <Notifications />
                         </Route>
                         <Route path="/schedule">
-                            schedule
+                            <Schedule />
                         </Route>
                         <Route path="/settings">
                             settings
