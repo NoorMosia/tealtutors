@@ -18,6 +18,8 @@ const Layout = () => {
                     <div className={Styles.Right}>
                     </div>
                 </div>
+
+                <div className={Styles.Footer}>Built by Mosia Noor-Tshepo</div>
             </div>
         </ChakraProvider>
     );
