@@ -53,7 +53,9 @@ export const posts = [
         Message: `Lorem ipsum is placeholder text commonly used in 
         the graphic, print, andpublishing industries for previewing 
         layouts and visual mockups.`,
-        date: ""
+        date: "",
+        likes: [],
+        comments: []
     },
     {
         id: 2,
@@ -61,7 +63,9 @@ export const posts = [
         Message: `Lorem ipsum is placeholder text commonly used in 
         the graphic, print, andpublishing industries for previewing 
         layouts and visual mockups.`,
-        date: ""
+        date: "",
+        likes: [],
+        comments: []
     },
     {
         id: 3,
@@ -69,7 +73,9 @@ export const posts = [
         Message: `Lorem ipsum is placeholder text commonly used in 
         the graphic, print, andpublishing industries for previewing 
         layouts and visual mockups.`,
-        date: ""
+        date: "",
+        likes: [],
+        comments: []
     },
     {
         id: 4,
@@ -77,7 +83,9 @@ export const posts = [
         Message: `Lorem ipsum is placeholder text commonly used in 
         the graphic, print, andpublishing industries for previewing 
         layouts and visual mockups.`,
-        date: ""
+        date: "",
+        likes: [],
+        comments: []
     },
     {
         id: 5,
@@ -85,7 +93,9 @@ export const posts = [
         Message: `Lorem ipsum is placeholder text commonly used in 
         the graphic, print, andpublishing industries for previewing 
         layouts and visual mockups.`,
-        date: ""
+        date: "",
+        likes: [],
+        comments: []
     },
     {
         id: 6,
@@ -93,7 +103,9 @@ export const posts = [
         Message: `Lorem ipsum is placeholder text commonly used in 
         the graphic, print, andpublishing industries for previewing 
         layouts and visual mockups.`,
-        date: ""
+        date: "",
+        likes: [],
+        comments: []
     },
     {
         id: 7,
@@ -101,7 +113,9 @@ export const posts = [
         Message: `Lorem ipsum is placeholder text commonly used in 
         the graphic, print, andpublishing industries for previewing 
         layouts and visual mockups.`,
-        date: ""
+        date: "",
+        likes: [],
+        comments: []
     },
     {
         id: 8,
@@ -109,7 +123,9 @@ export const posts = [
         Message: `Lorem ipsum is placeholder text commonly used in 
         the graphic, print, andpublishing industries for previewing 
         layouts and visual mockups.`,
-        date: ""
+        date: "",
+        likes: [],
+        comments: []
     },
     {
         id: 9,
@@ -117,7 +133,9 @@ export const posts = [
         Message: `Lorem ipsum is placeholder text commonly used in 
         the graphic, print, andpublishing industries for previewing 
         layouts and visual mockups.`,
-        date: ""
+        date: "",
+        likes: [],
+        comments: []
     },
     {
         id: 10,
@@ -125,7 +143,9 @@ export const posts = [
         Message: `Lorem ipsum is placeholder text commonly used in 
         the graphic, print, andpublishing industries for previewing 
         layouts and visual mockups.`,
-        date: ""
+        date: "",
+        likes: [],
+        comments: []
     },
     {
         id: 11,
@@ -133,7 +153,9 @@ export const posts = [
         Message: `Lorem ipsum is placeholder text commonly used in 
         the graphic, print, andpublishing industries for previewing 
         layouts and visual mockups.`,
-        date: ""
+        date: "",
+        likes: [],
+        comments: []
     },
 ];
 

@@ -13,12 +13,12 @@ const NotificationCard = props => {
         </div>
         <div className={Styles.Details}>
             <div className={Styles.Image}>
-                <Avatar size="md" name="Christian Nwamba" src="https://bit.ly/code-beast" />
+                <Avatar size="md" name={props.user.name} src={props.user.img} />
             </div>
             <div className={Styles.Text}>
                 <div className={Styles.Summary}>
                     <div className={Styles.Name}>
-                        Noor Mosia
+                        {props.user.name}
                     </div>
                     <div className={Styles.Text}>
                         liked your post

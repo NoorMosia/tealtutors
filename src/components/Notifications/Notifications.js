@@ -3,17 +3,18 @@ import * as Styles from "./Notifications.module.css";
 
 import NotificationCard from "../NotificationCard/NotificationCard";
 
+import { users } from "../../ui/Data";
+import Heading from "../Heading/Heading";
+
 const Notifications = props => {
+    const notifs = users.map(user => {
+        return <NotificationCard user={user} />
+    })
+
     return <div className={Styles.Notifications}>
-        <div className={Styles.Heading}>
-            Notifications
-        </div>
+        <Heading>Notifications</Heading>
         <div className={Styles.Content}>
-            <NotificationCard />
-            <NotificationCard />
-            <NotificationCard />
-            <NotificationCard />
-            <NotificationCard />
+            {notifs}
         </div>
     </div>
 }
