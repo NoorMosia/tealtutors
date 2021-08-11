@@ -16,14 +16,26 @@ const Profile = props => {
     return (
         <div className={Styles.Profile}>
             <div className={Styles.Head}>
-                <div className={Styles.Image}>
-                    <Avatar size="2xl" name="Segun Adebayo" src="https://bit.ly/sage-adebayo" />
+                <div className={Styles.HeadTop}>
+                    <div className={Styles.Image}>
+                        <Avatar size="2xl" name="Segun Adebayo" src="https://bit.ly/sage-adebayo" />
+                    </div>
+                    <div className={Styles.Buttons}>
+                        <Button colorScheme="teal" variant="outline">Follow</Button>
+                        <Button colorScheme="teal" variant="outline">Subscribe</Button>
+                    </div>
                 </div>
-                <div className={Styles.Buttons}>
-                    <Button colorScheme="teal" variant="outline">Follow</Button>
-                    <Button colorScheme="teal" variant="outline">Subscribe</Button>
+
+                <div className={Styles.HeadBottom}>
+                    <div className={Styles.DescriptionText}>
+                        Lorem ipsum is placeholder text commonly used in the graphic, print, and
+                        publishing industries for previewing layouts and visual mockups.
+                        Lorem ipsum is placeholder text commonly used in the graphic, print, and
+                        publishing industries for previewing layouts and visual mockups.
+                    </div>
                 </div>
             </div>
+
 
             <div className={Styles.Links}>
                 <Tabs isFitted variant="enclosed">

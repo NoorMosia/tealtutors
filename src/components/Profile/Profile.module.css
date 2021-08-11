@@ -1,10 +1,15 @@
 
-
 .Head {
     padding: 20px;
+}
+
+.HeadTop {
     display: flex;
     justify-content: space-between;
-    background: rgb(243, 243, 243);
+}
+
+.HeadBottom {
+    padding: 10px;
 }
 
 .Buttons {
