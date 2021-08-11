@@ -25,8 +25,9 @@ const Profile = props => {
                         </Stack>
                     </div>
                     <div className={Styles.Buttons}>
-                        <Button colorScheme="teal" variant="outline">Follow</Button>
-                        <Button colorScheme="teal" variant="outline">Subscribe</Button>
+                        {/* <Button colorScheme="teal" variant="outline">Follow</Button>
+                        <Button colorScheme="teal" variant="outline">Subscribe</Button> */}
+                        <Button colorScheme="teal" variant="outline">Update</Button>
                     </div>
                 </div>
 

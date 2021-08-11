@@ -5,7 +5,8 @@ import {
     AiOutlineMessage,
     AiOutlineHeart
 } from "react-icons/ai";
-import { Icon } from "@chakra-ui/react"
+import { Icon } from "@chakra-ui/react";
+import { Link } from "react-router-dom";
 
 import { Avatar, Text } from "@chakra-ui/react";
 
@@ -13,7 +14,9 @@ const PostCard = props => {
     return (
         <div className={Styles.PostCard}>
             <div className={Styles.AvatarSide}>
-                <Avatar name={props.data.name} src={props.data.img} />
+                <Link to="/profile">
+                    <Avatar name={props.data.name} src={props.data.img} />
+                </Link>
             </div>
             <div className={Styles.TextSide}>
                 <div className={Styles.Name}>
@@ -26,7 +29,6 @@ const PostCard = props => {
                     Lorem ipsum is placeholder text commonly used in the graphic, print, and
                     publishing industries for previewing layouts and visual mockups.
                 </Text>
-
                 <div className={Styles.PostCardExtras}>
                     <div className={Styles.icon}>
                         <div className={Styles.Icon}>
