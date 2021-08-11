@@ -6,7 +6,7 @@ import * as Styles from "./Layout.module.css";
 import Navigation from "../../components/Navigation/Navigation";
 import Middle from "../../components/Middle/Middle";
 
-import Left from "../../components/Left/Left";
+import Left from "../../containers/Left/Left";
 
 const Layout = () => {
     return (

@@ -13,7 +13,7 @@ const Post = props => {
     return (
         <div className={Styles.Post}>
             <div className={Styles.AvatarSide}>
-                <Avatar name={props.data.name} src="https://bit.ly/prosper-baba" />
+                <Avatar name={props.data.name} src={props.data.img} />
             </div>
             <div className={Styles.TextSide}>
                 <div className={Styles.Name}>

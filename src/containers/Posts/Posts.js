@@ -7,22 +7,22 @@ const data = [
     {
         name: "noor mosia",
         username: "mosianoor",
-        img: ""
+        img: "https://bit.ly/code-beast"
     },
     {
         name: "Kyle Walker",
         username: "KWalker",
-        img: ""
+        img: "https://bit.ly/dan-abramov"
     },
     {
         name: "Lionel Messi",
         username: "THEGOAT",
-        img: ""
+        img: "https://bit.ly/sage-adebayo"
     },
     {
         name: "King James",
         username: "KINGJ",
-        img: ""
+        img: "https://bit.ly/ryan-florence"
     }
 ]
 

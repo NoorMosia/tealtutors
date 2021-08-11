@@ -4,13 +4,14 @@ import Post from "../Post/Post";
 
 const data = {
     name: "noor mosia",
-    username: "mosianoor"
+    username: "mosianoor",
+    img: "https://bit.ly/ryan-florence"
 }
 
 const FullPost = props => {
     console.log(props);
     return <div className={Styles.FullPost}>
-        <Post data={data} />
+        <Post {...props} data={data} />
     </div>
 }
 

@@ -9,7 +9,7 @@ import {
 } from "react-icons/ai";
 import * as Styles from "./Left.module.css";
 
-import Link from "../NavLink/NavLink";
+import Link from "../../components/NavLink/NavLink";
 import { NavLink } from "react-router-dom"
 
 const Left = () => {
