@@ -1,6 +1,6 @@
 import React from "react";
 import * as Styles from "./FullPost.module.css";
-import Post from "../Post/Post";
+import PostCard from "../PostCard/PostCard";
 
 const data = {
     name: "noor mosia",
@@ -11,7 +11,7 @@ const data = {
 const FullPost = props => {
     console.log(props);
     return <div className={Styles.FullPost}>
-        <Post {...props} data={data} />
+        <PostCard {...props} data={data} />
     </div>
 }
 

@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 //import moment from 'moment'
 //import 'moment/locale/zh-cn';
 import Scheduler, { SchedulerData, ViewTypes, DemoData } from 'react-big-scheduler'
-import withDragDropContext from './withDnDContext'
+import withDragDropContext from './withDnDContext';
 import 'react-big-scheduler/lib/css/style.css';
 import * as Styles from "./Schedule.module.css";
 
@@ -23,6 +23,8 @@ class Basic extends Component {
     }
 
     render() {
+
+        console.log(DemoData);
         const { viewModel } = this.state;
         return (
             <div className={Styles.Schedule}>

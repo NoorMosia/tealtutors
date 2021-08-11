@@ -1,5 +1,5 @@
 import React from "react";
-import * as Styles from "./Post.module.css";
+import * as Styles from "./PostCard.module.css";
 import {
     AiOutlinePaperClip,
     AiOutlineMessage,
@@ -9,9 +9,9 @@ import { Icon } from "@chakra-ui/react"
 
 import { Avatar, Text } from "@chakra-ui/react";
 
-const Post = props => {
+const PostCard = props => {
     return (
-        <div className={Styles.Post}>
+        <div className={Styles.PostCard}>
             <div className={Styles.AvatarSide}>
                 <Avatar name={props.data.name} src={props.data.img} />
             </div>
@@ -27,7 +27,7 @@ const Post = props => {
                     publishing industries for previewing layouts and visual mockups.
                 </Text>
 
-                <div className={Styles.PostExtras}>
+                <div className={Styles.PostCardExtras}>
                     <div className={Styles.icon}>
                         <div className={Styles.Icon}>
                             <Icon as={AiOutlinePaperClip} />
@@ -58,4 +58,4 @@ const Post = props => {
     );
 }
 
-export default Post;
+export default PostCard;

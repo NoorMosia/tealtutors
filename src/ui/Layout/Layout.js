@@ -4,8 +4,7 @@ import { ChakraProvider } from "@chakra-ui/react";
 import * as Styles from "./Layout.module.css";
 
 import Navigation from "../../components/Navigation/Navigation";
-import Middle from "../../components/Middle/Middle";
-
+import Middle from "../../containers/Middle/Middle";
 import Left from "../../containers/Left/Left";
 
 const Layout = () => {
