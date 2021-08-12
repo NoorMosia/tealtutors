@@ -28,7 +28,7 @@ const Left = () => {
                 <Link name="Schedule" icon={AiOutlineCalendar} />
             </NavLink>
 
-            <NavLink to="/bobby69" activeClassName={Styles.Active}>
+            <NavLink to="/bobby69" activeClassName={Styles.Active} >
                 <Link name="Profile" icon={AiOutlineUser} />
             </NavLink>
 

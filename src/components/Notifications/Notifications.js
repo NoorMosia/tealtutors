@@ -8,7 +8,7 @@ import Heading from "../Heading/Heading";
 
 const Notifications = props => {
     const notifs = users.map(user => {
-        return <NotificationCard user={user} />
+        return <NotificationCard key={user.username} user={user} />
     })
 
     return <div className={Styles.Notifications}>
