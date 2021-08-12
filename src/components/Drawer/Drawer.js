@@ -22,7 +22,7 @@ function RightDrawer() {
     return (
         <>
             <div ref={btnRef} colorScheme="teal" onClick={onOpen}>
-                <Icon as={AiOutlineMenu} />
+                <Icon as={AiOutlineMenu} w={10} h={10} />
             </div>
             <Drawer
                 isOpen={isOpen}

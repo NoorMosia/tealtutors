@@ -3,12 +3,33 @@
     flex-direction: column;
     align-items:flex-start;
     position: fixed;
+    width: 20%;
 }
 
 .Active {
-    color: red;
-    font-size: 2px;
     border: 1px solid rgba(0, 128, 128, 0.26);
     border-radius: 5px;
     background: #E6FFFA;
+    padding: 4px 0;
+    transition: .1s all;
+    /* width: 91%; */
+}
+
+.FullWidth {
+    width: 90%;
+    padding: 3px 0;
+    margin-bottom: 10px;
+}
+
+
+@media only screen and (max-width: 1000px){
+    .Left {
+        width: 30%;
+    }
+}
+
+@media only screen and (max-width: 650px){
+    .Left {
+       display: none;
+    }
 }
