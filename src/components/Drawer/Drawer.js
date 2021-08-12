@@ -1,9 +1,7 @@
 import React from "react";
 import {
-    Button,
     Drawer,
     DrawerBody,
-    DrawerFooter,
     DrawerHeader,
     DrawerOverlay,
     DrawerContent,
@@ -21,7 +19,7 @@ function RightDrawer() {
 
     return (
         <>
-            <div ref={btnRef} colorScheme="teal" onClick={onOpen}>
+            <div ref={btnRef} onClick={onOpen}>
                 <Icon as={AiOutlineMenu} w={10} h={10} />
             </div>
             <Drawer
@@ -33,18 +31,11 @@ function RightDrawer() {
                 <DrawerOverlay />
                 <DrawerContent>
                     <DrawerCloseButton />
-                    <DrawerHeader>Create your account</DrawerHeader>
+                    <DrawerHeader>Menu</DrawerHeader>
 
                     <DrawerBody>
                         <Left />
                     </DrawerBody>
-
-                    <DrawerFooter>
-                        <Button variant="outline" mr={3} onClick={onClose}>
-                            Cancel
-                        </Button>
-                        <Button colorScheme="blue">Save</Button>
-                    </DrawerFooter>
                 </DrawerContent>
             </Drawer>
         </>

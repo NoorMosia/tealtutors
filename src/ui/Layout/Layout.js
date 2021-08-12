@@ -13,7 +13,9 @@ const Layout = () => {
             <div className={Styles.Layout}>
                 <Navigation />
                 <div className={Styles.Body}>
-                    <Left />
+                    <div className={Styles.Left} >
+                        <Left />
+                    </div>
                     <Middle />
                     <div className={Styles.Right}>
                     </div>

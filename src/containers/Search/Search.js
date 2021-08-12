@@ -1,7 +1,7 @@
 import React from "react";
 import * as Styles from "./Search.module.css";
 
-import { Input, IconButton, Tabs, TabList, TabPanel, Tab, TabPanels } from "@chakra-ui/react";
+import { Center, Input, IconButton, Tabs, TabList, TabPanel, Tab, TabPanels, Spinner } from "@chakra-ui/react";
 import {
     AiOutlineSearch,
 } from "react-icons/ai";
@@ -25,10 +25,14 @@ const Search = () => {
                 </TabList>
                 <TabPanels>
                     <TabPanel>
-                        {/* <Posts /> */}
+                        <Center>
+                            <Spinner />
+                        </Center>
                     </TabPanel>
                     <TabPanel>
-                        <p>A list of Tutors with same name!</p>
+                        <Center>
+                            <Spinner />
+                        </Center>
                     </TabPanel>
                 </TabPanels>
             </Tabs>
