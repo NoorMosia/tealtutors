@@ -58,20 +58,19 @@ const DemoData = {
         {
             groupOnly: true,
             id: "r0",
-            name: "R. Firmino",
+            name: "Mathematics",
         },
         {
             groupOnly: true,
             id: "r1",
-            name: "I. Meslier",
+            name: "Physics",
         },
         {
             groupOnly: true,
             id: "r2",
-            name: "T. Mings",
+            name: "Arts",
         }
     ]
-
 }
 
 class Basic extends Component {
@@ -95,8 +94,8 @@ class Basic extends Component {
         return (
             <div className={Styles.Schedule}>
                 <Heading>Schedule</Heading>
-                <div>
-                    <Scheduler schedulerData={viewModel}
+                <div className={Styles.Calendar}>
+                    <Scheduler className={Styles.Calendar} schedulerData={viewModel}
                         prevClick={this.prevClick}
                         nextClick={this.nextClick}
                         onSelectDate={this.onSelectDate}

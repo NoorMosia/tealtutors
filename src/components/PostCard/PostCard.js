@@ -7,10 +7,13 @@ import {
 } from "react-icons/ai";
 import { Icon } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
+import { Avatar, Text, useDisclosure } from "@chakra-ui/react";
 
-import { Avatar, Text } from "@chakra-ui/react";
+import Attachments from "./Attachments/Attachments";
 
 const PostCard = props => {
+    const { isOpen, onToggle } = useDisclosure()
+
     return (
         <div className={Styles.PostCard}>
             <div className={Styles.AvatarSide}>
@@ -27,7 +30,7 @@ const PostCard = props => {
                     {props.data.message}
                 </Text>
                 <div className={Styles.PostCardExtras}>
-                    <div className={Styles.icon}>
+                    <div className={Styles.icon} onClick={onToggle}>
                         <div className={Styles.Icon}>
                             <Icon as={AiOutlinePaperClip} />
                         </div>
@@ -52,8 +55,11 @@ const PostCard = props => {
                         </div>
                     </div>
                 </div>
+                <div className={Styles.Attachments} >
+                    <Attachments isOpen={isOpen} />
+                </div>
             </div>
-        </div>
+        </div >
     );
 }
 

@@ -15,6 +15,7 @@ const user = {
 }
 
 const FullPost = props => {
+
     return <div className={Styles.FullPost}>
         <PostCard {...props} user={user} data={data} />
 
