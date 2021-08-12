@@ -10,7 +10,7 @@ import {
 import * as Styles from "./Left.module.css";
 
 import Link from "../../components/NavLink/NavLink";
-import { NavLink } from "react-router-dom"
+import { NavLink } from "react-router-dom";
 
 const Left = () => {
     return (
@@ -28,7 +28,7 @@ const Left = () => {
                 <Link name="Schedule" icon={AiOutlineCalendar} />
             </NavLink>
 
-            <NavLink to="/profile" activeClassName={Styles.Active}>
+            <NavLink to="/bobby69" activeClassName={Styles.Active}>
                 <Link name="Profile" icon={AiOutlineUser} />
             </NavLink>
 

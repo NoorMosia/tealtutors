@@ -13,7 +13,7 @@ const Posts = () => {
 
     const PostData = data.map(data => {
         const user = { ...data[0] };
-        return <Link to={`/post/${data.id}`}>
+        return <Link key={data.id} to={`/post/${data.id}`}>
             <Post data={data} user={user} />
         </Link>
     })

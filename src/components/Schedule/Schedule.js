@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 //import moment from 'moment'
 //import 'moment/locale/zh-cn';
-import Scheduler, { SchedulerData, ViewTypes, } from 'react-big-scheduler'
+import Scheduler, { SchedulerData, ViewTypes } from 'react-big-scheduler'
 import withDragDropContext from './withDnDContext';
 import 'react-big-scheduler/lib/css/style.css';
 import * as Styles from "./Schedule.module.css";
@@ -13,7 +13,7 @@ const DemoData = {
         end: "2021-08-11 12:30:00",
         id: 1,
         resourceId: "r1",
-        showPopover: false,
+        showPopover: true,
         start: "2021-08-11 09:30:00",
         title: "Chemical change",
     },
@@ -22,7 +22,7 @@ const DemoData = {
         end: "2021-08-11 12:30:00",
         id: 1,
         resourceId: "r0",
-        showPopover: false,
+        showPopover: true,
         start: "2021-08-11 09:30:00",
         title: "Statistics",
     },
@@ -31,7 +31,7 @@ const DemoData = {
         end: "2021-08-11 14:30:00",
         id: 1,
         resourceId: "r2",
-        showPopover: false,
+        showPopover: true,
         start: "2021-08-11 13:30:00",
         title: "Drawing",
     }
@@ -41,7 +41,7 @@ const DemoData = {
         end: "2021-08-18 23:30:00",
         id: 1,
         resourceId: "r1",
-        showPopover: false,
+        showPopover: true,
         start: "2021-08-11 09:30:00",
         title: "Chemical change",
     }],
@@ -50,23 +50,23 @@ const DemoData = {
         end: "2021-08-11 23:30:00",
         id: 1,
         resourceId: "r1",
-        showPopover: false,
+        showPopover: true,
         start: "2021-08-11 09:30:00",
         title: "Chemical change",
     }],
     resources: [
         {
-            groupOnly: false,
+            groupOnly: true,
             id: "r0",
             name: "R. Firmino",
         },
         {
-            groupOnly: false,
+            groupOnly: true,
             id: "r1",
             name: "I. Meslier",
         },
         {
-            groupOnly: false,
+            groupOnly: true,
             id: "r2",
             name: "T. Mings",
         }
@@ -78,8 +78,8 @@ class Basic extends Component {
     constructor(props) {
         super(props);
         //let schedulerData = new SchedulerData(new moment("2017-12-18").format(DATE_FORMAT), ViewTypes.Week);
-        let schedulerData = new SchedulerData('2021-08-11 09:30:00', ViewTypes.Day, false, false, {
-            minuteStep: 15
+        let schedulerData = new SchedulerData('2021-08-11', ViewTypes.Day, false, false, {
+            minuteStep: 30
         });
         // schedulerData.localeMoment.locale('en');
         schedulerData.setResources(DemoData.resources);
@@ -201,6 +201,6 @@ class Basic extends Component {
             viewModel: schedulerData
         })
     }
-}
+};
 
 export default withDragDropContext(Basic)

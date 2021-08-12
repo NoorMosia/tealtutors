@@ -14,7 +14,7 @@ const PostCard = props => {
     return (
         <div className={Styles.PostCard}>
             <div className={Styles.AvatarSide}>
-                <Link to={"/profile/" + props.user.username}>
+                <Link to={"/" + props.user.username}>
                     <Avatar name={props.user.name} src={props.user.img} />
                 </Link>
             </div>

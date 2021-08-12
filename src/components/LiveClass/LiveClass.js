@@ -2,16 +2,17 @@ import React from "react";
 import * as Styles from "./LiveClass.module.css";
 
 import { Stack, Button } from "@chakra-ui/react";
+import { useParams } from "react-router-dom";
 
 import Heading from "../Heading/Heading";
 
 const LiveClass = () => {
+    const { id } = useParams();
+    console.log(id);
 
     return <div className={Styles.LiveClass}>
-        <Heading>@bobby69's Live</Heading>
-
+        <Heading>@{id}'s Live</Heading>
         <div className={Styles.Contents}>
-
             <div className={Styles.Buttons}>
                 <Stack direction="row" spacing={4}>
                     <Button colorScheme="teal" variant="solid">

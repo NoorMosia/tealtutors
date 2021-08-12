@@ -35,14 +35,14 @@ const Middle = () => {
                 <Route path="/schedule">
                     <Schedule />
                 </Route>
-                <Route path="/profile">
-                    <Profile />
-                </Route>
-                <Route path="/live">
+                <Route path="/live/:id">
                     <LiveClass />
                 </Route>
                 <Route path="/settings">
                     settings
+                </Route>
+                <Route path="/:id">
+                    <Profile />
                 </Route>
             </Switch>
         </div>
