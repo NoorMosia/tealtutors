@@ -6,7 +6,6 @@ import {
     AiOutlineSearch,
 } from "react-icons/ai";
 import Heading from "../../components/Heading/Heading";
-// import Posts from "../Posts/Posts";
 
 
 const Search = () => {
@@ -26,12 +25,22 @@ const Search = () => {
                 <TabPanels>
                     <TabPanel>
                         <Center>
-                            <Spinner />
+                            <Spinner
+                                thickness="4px"
+                                speed="0.65s"
+                                emptyColor="teal.200"
+                                color="teal.400"
+                                size="xl" />
                         </Center>
                     </TabPanel>
                     <TabPanel>
                         <Center>
-                            <Spinner />
+                            <Spinner
+                                thickness="4px"
+                                speed="0.65s"
+                                emptyColor="teal.200"
+                                color="teal.400"
+                                size="xl" />
                         </Center>
                     </TabPanel>
                 </TabPanels>
