@@ -24,6 +24,40 @@
     align-items: center;
 }
 
+.Home {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin-top: 28vh;
+    align-items: center;
+}
+
+.BigText {
+    color: #1D4044;
+    width: 800px;
+    font-size: 58px;
+    font-weight: 800;
+    line-height: 58px;
+    text-align: center;
+}
+
+.MediumText {
+    color: rgb(68, 68, 68);
+    margin-top: 20px;
+    width: 800px;
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 36px;
+    text-align: center;
+}
+
+.Buttons {
+    margin-top: 30px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
 
 @media only screen and (max-width: 1000px){
     .Right {
