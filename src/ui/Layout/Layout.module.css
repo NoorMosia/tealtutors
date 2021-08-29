@@ -5,7 +5,7 @@
 
 .Body {
     margin-top: 80px;
-    padding: 20px 0;
+    padding: 20px 40px;
     display: flex;
     min-height: 80vh;
 }
@@ -28,8 +28,11 @@
     height: 100vh;
     display: flex;
     flex-direction: column;
-    margin-top: 28vh;
+    padding-top: 28vh;
     align-items: center;
+    background: linear-gradient(#ffffffd8, #fbfcff9c), url("./bg.jpg");
+    background-size: cover;
+    background-position: bottom;
 }
 
 .BigText {
