@@ -7,7 +7,7 @@
 }
 
 .Tutor {
-    background: #E6FFFA;
+    /* background: #E6FFFA; */
     height: 500px;
     border-radius: 5px;
 }
@@ -20,8 +20,12 @@
 
 .Learner {
     border-radius: 5px;
-    background: #B2F5EA;
+    /* background: #B2F5EA; */
     margin: 10px;
     width: 100px;
     height: 100px;
+}
+
+.Learner img { 
+    width: 100%;
 }
